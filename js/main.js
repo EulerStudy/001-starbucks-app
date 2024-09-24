@@ -1,21 +1,3 @@
-// 검색
-const searchEl = document.querySelector('.search')
-const searchInputEl = searchEl.querySelector('input')
-
-searchEl.addEventListener('click', function(){
-  searchInputEl.focus()
-})
-
-searchInputEl.addEventListener('focus', function(){
-  searchEl.classList.add('focused')
-  searchInputEl.setAttribute('placeholder', '통합검색')
-})
-
-searchInputEl.addEventListener('blur', function(){
-  searchEl.classList.remove('focused')
-  searchInputEl.setAttribute('placeholder', '')
-})
-
 // 배지
 const badgeEl = document.querySelector('header .badges')
 // _.throttle(함수, 300) lodash의 도움을 받아 0.3s 단위로 실행
@@ -152,6 +134,3 @@ new Swiper('.awards .swiper', {
     nextEl: '.awards .swiper-next'
   }
 })
-
-const thisYear = document.querySelector('.this-year')
-thisYear.textContent = new Date().getFullYear()
