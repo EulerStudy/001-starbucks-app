@@ -1,0 +1,9 @@
+{
+  "homepage": "https://EulerStudy.github.io/001-starbucks-app",
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  }
+}
